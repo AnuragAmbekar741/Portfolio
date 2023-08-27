@@ -54,8 +54,8 @@ export default function Intro() {
             animate={{opacity:1,y:0}}
         >
             
-                Hi I am <span className='bg-gradient-to-r from-[#e81cff]  to-[#40c9ff] inline-block text-transparent bg-clip-text'>Anurag</span> and I am here to sell myself.
-                Not exactly myself, 😆 but some of <span className='bg-gradient-to-r from-[#696eff]  to-[#40c9ff] inline-block text-transparent bg-clip-text font-bold'>robust</span> and <span className='bg-gradient-to-r from-[#aab2ff] font-bold to-[#40c9ff] inline-block text-transparent bg-clip-text'>articulate</span> <span className='underline font-bold'>code</span> which builds picture perfect, user interactive <span className='bg-gradient-to-r from-[#e81cff]  to-[#40c9ff] inline-block text-transparent bg-clip-text underline font-semibold'>Web applications.</span> 
+                Hi I am <span className='bg-gradient-to-r from-[#e81cff]  to-[#40c9ff] inline-block text-transparent bg-clip-text font-bold underline'>Anurag</span> and I am here to sell myself.
+                Not exactly myself, 😆 but some of <span className='bg-gradient-to-r from-[#696eff]  to-[#40c9ff] inline-block text-transparent bg-clip-text font-bold'>robust</span> and <span className='bg-gradient-to-r from-[#aab2ff] font-bold to-[#40c9ff] inline-block text-transparent bg-clip-text'>articulate</span> <span className='underline font-bold'>code</span> which builds <span className='underline font-semibold'>picture perfect</span>, <motion.span initial={{opacity:0,y:100}} animate={{opacity:1,y:1}} transition={{delay:1.5,rotate:30}} className='font-bold text-3xl hover:bg-gradient-to-r from-[#2E3192] to-[#1BFFFF] hover:inline-block hover:text-transparent hover:bg-clip-text'>user interactive</motion.span> <span>completely responsive</span> <span className='bg-gradient-to-r from-[#e81cff]  to-[#40c9ff] inline-block text-transparent bg-clip-text underline font-semibold'>Web applications.</span> 
             
         </motion.p>
         <motion.div 
@@ -69,18 +69,32 @@ export default function Intro() {
               className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-2xl outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'
               >Contact Me <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition'/>{" "}
             </Link>
+
             <a
-              className='bg-white text-gray-900 px-7 py-3 flex items-center gap-2 rounded-2xl'
+              className='group bg-white text-gray-900 px-7 py-3 flex items-center gap-2 rounded-2xl outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 '
+              href='/AnuragAmbekarCV .pdf'
+              download
             >
                 Download CV 
-                <HiDownload/>
+                <HiDownload className='text-xl opacity-60 group-hover: translate-y-1 transition'/>
             </a>
-            <a className='bg-white text-gray-900 p-4 flex items-center gap-2 rounded-2xl'>
+
+            <a 
+              className='bg-white text-gray-900 p-4 flex items-center gap-2 rounded-2xl focus:scale-110 hover:scale-120 active:scale-105 transition cursor-pointer border border-black/10'
+              href=''
+              target='_blank'
+            >
                 <BsLinkedin/>
             </a>
-            <a className='bg-white text-gray-900 p-4 flex items-center gap-2 rounded-2xl text-[1.35rem]'>
+
+            <a 
+              className='bg-white text-gray-900 p-4 flex items-center gap-2 rounded-2xl text-[1.35rem] focus:scale-120 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10'
+              href=''
+              target='_blank'
+            >
                 <FaGithubSquare/>
             </a>
+
         </motion.div>
     </section>
   )
