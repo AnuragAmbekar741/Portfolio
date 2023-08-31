@@ -1,18 +1,18 @@
 "use client"
 
 import React from 'react'
-import img from '@/public/img.jpeg'
+import img from '@/public/AnuragImg1.jpeg'
 import Image from 'next/image'
-import { delay, easeInOut, motion, spring } from 'framer-motion'
+import {motion} from 'framer-motion'
 import Link from 'next/link'
 import {BsArrowRight, BsLinkedin} from 'react-icons/bs'
 import {HiDownload} from 'react-icons/hi'
-import { FaGitSquare, FaGithubSquare } from 'react-icons/fa'
+import { FaGithubSquare } from 'react-icons/fa'
 
 
 export default function Intro() {
   return (
-    <section className='mb-28 max-w-[50rem] text-center sm:mb-0'>
+    <section className='mb-28 max-w-[57rem] text-center sm:mb-0'>
         <div className='flex items-center justify-center'>
             <div className='relative'>
                 <motion.div
@@ -54,8 +54,16 @@ export default function Intro() {
             animate={{opacity:1,y:0}}
         >
             
-                Hi I am <span className='font-bold text-2xl hover:bg-gradient-to-r from-[#e81cff] to-[#40c9ff] hover:inline-block hover:text-transparent hover:bg-clip-text transition'>Anurag</span> and I am here to sell myself.
-                Not exactly myself, 😆 but some of <span className='font-bold text-2xl hover:bg-gradient-to-r from-[#e81cff] to-[#40c9ff] hover:inline-block hover:text-transparent hover:bg-clip-text transition'>robust</span> and <span className='font-bold text-2xl hover:bg-gradient-to-r from-[#e81cff] to-[#40c9ff] hover:inline-block hover:text-transparent hover:bg-clip-text transition'>articulate</span> <span className='underline texxt-2xl font-bold'>code</span> which builds <span className='font-bold text-3xl hover:bg-gradient-to-r from-[#e81cff] to-[#40c9ff] hover:inline-block hover:text-transparent hover:bg-clip-text transition'>picture perfect</span>, <motion.span initial={{opacity:0,x:-100}} animate={{opacity:1,x:0}} transition={{delay:1.5,rotate:30}} className='font-bold text-3xl hover:bg-gradient-to-r from-[#e81cff] to-[#40c9ff] hover:inline-block hover:text-transparent hover:bg-clip-text transition'>user interactive</motion.span> <span>completely responsive</span> <span className='font-bold text-3xl hover:bg-gradient-to-r from-[#e81cff] to-[#40c9ff] hover:inline-block hover:text-transparent hover:bg-clip-text transition'>Web applications.</span> 
+                Hi I am <span className='font-bold text-2xl hover:bg-gradient-to-r from-[#e81cff] to-[#40c9ff] hover:inline-block hover:text-transparent hover:bg-clip-text transition'> Anurag  </span>
+                and I am here to sell myself.
+                <br/>Not exactly myself, 😆 but some of 
+                <span className='font-bold text-2xl hover:bg-gradient-to-r from-[#e81cff] to-[#40c9ff] hover:inline-block hover:text-transparent hover:bg-clip-text transition'> robust </span> and 
+                <span className='font-bold text-2xl hover:bg-gradient-to-r from-[#e81cff] to-[#40c9ff] hover:inline-block hover:text-transparent hover:bg-clip-text transition'> articulate </span> 
+                <span className='underline texxt-2xl font-bold'>  code</span> which builds <br/> 
+                <span className='font-bold text-3xl hover:bg-gradient-to-r from-[#e81cff] to-[#40c9ff] hover:inline-block hover:text-transparent hover:bg-clip-text transition'>picture perfect,</span>
+                <motion.span initial={{opacity:0,x:-100}} animate={{opacity:1,x:0}} transition={{type: "tween", stiffness: 100,delay:0.3}} className='font-bold text-3xl hover:bg-gradient-to-r from-[#e81cff] to-[#40c9ff] hover:inline-block hover:text-transparent hover:bg-clip-text z-10 transition'> user interactive, </motion.span> 
+                <span className='font-bold text-3xl hover:bg-gradient-to-r from-[#e81cff] to-[#40c9ff] hover:inline-block hover:text-transparent hover:bg-clip-text transition'>completely responsive</span> <br/> 
+                <span className='font-bold text-[52px] hover:bg-gradient-to-r from-[#e81cff] to-[#40c9ff] hover:inline-block hover:text-transparent hover:bg-clip-text transition tracking-[0.7rem] hover:tracking-normal'>Web applications.</span> 
             
         </motion.p>
         <motion.div 
